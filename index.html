@@ -18,29 +18,35 @@
         </div>    
     </header>
                     <!---------- The Score Board ! ------------------>
-    <header class="text-center">  
+    <header class="scoreb text-center">  
         <div class="score mt-4 text-white border-white rounded d-inline-block"  id="score-board">
             <span class="p-4" id="user-score">0</span>:<span class="p-4" id="pc-score">0</span>
-        </div>
-        <div class="pc-player text-white m-3">
-            <hn id="player" class="left border-danger font-weight-bold">You</hn> 
-            <hn id="pc" class="border-danger font-weight-bold">PC</hn>
+            <hn id="player" class="player border-danger font-weight-bold text-white">You</hn> 
+            <hn id="pc" class="pc border-danger font-weight-bold text-white">PC</hn>
         </div>
         <div class="result">
-            <h3 class="text-white font-weight-bold">Choose to get started !</h3>
+            <h3 class="text-white font-weight-bold pt-3">Choose to get started !</h3>
         </div>
                 <!--------  ROCK PAPER SCISSORS !  ---------------->
-        <hr class="bg-white border border-white"> 
-        <div class="m-4">
+        <!--<hr class="bg-white border border-white"> -->
+        <div class="playerChoices m-4">
             <input type="image" width="150px" height="150px" src="photo's/r.png" name="rock" class="border border-light rounded-circle rock d-inline m-2" id="Rock">
             <input type="image" width="150px" height="150px" src="photo's/p.png" name="paper" class="border border-light rounded-circle paper d-inline m-2" id="Paper">
             <input type="image" width="150px" height="150px" src="photo's/s.png" name="scissors" class="border border-light rounded-circle scissors d-inline m-2" id="Scissors">
+            <hn class="player2 border-danger font-weight-bold text-white">You</hn> 
+        </div>
+        <hr class="bg-white border border-white m-0 p-0"> 
+        <div class="pcChoices m-4">
+            <input type="image" width="150px" height="150px" src="photo's/r.png" name="rock" class="border border-light rounded-circle rock d-inline m-2" id="rockPc">
+            <input type="image" width="150px" height="150px" src="photo's/p.png" name="paper" class="border border-light rounded-circle paper d-inline m-2" id="paperPc">
+            <input type="image" width="150px" height="150px" src="photo's/s.png" name="scissors" class="border border-light rounded-circle scissors d-inline m-2" id="scissorsPc">
+            <hn class="pc2 border-danger font-weight-bold text-white">PC</hn>
         </div>
     </header>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    
     <footer class="text-center">
         <div>     
-            <h5 class="text-light font-weight-bold">© Copyright 2020 AppleGamer @Salah-Soft</h5>
+            <h5 class="text-light font-weight-bold">© Copyright 2020 Ghassan AlNajjar @Salah-Soft</h5>
         </div>
     </footer>
 <script src="java.js"></script>

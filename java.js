@@ -7,6 +7,9 @@ const result_div = document.querySelector(".result > h3");
 const rock_div = document.getElementById("Rock");
 const paper_div = document.getElementById("Paper");
 const scissors_div = document.getElementById("Scissors");
+const rockPc_div = document.getElementById("rockPc");
+const paperPc_div = document.getElementById("paperPc");
+const scissorsPc_div = document.getElementById("scissorsPc");
 
 
 // The computer's Choice
@@ -15,7 +18,7 @@ function getPcChoice(){
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
-// wining of lossing XD
+// wining ond lossing XD
 function win(userChoice, pcChoice){
     userScore++;
     if(userScore > 5 ){
@@ -32,7 +35,7 @@ function win(userChoice, pcChoice){
 }
 function loses(userChoice, pcChoice){
     pcScore++;
-    if(pcScore > 5 ){
+    if(pcScore > 5){
     pcScore = 0;
     confirm("lose");
     location.reload()

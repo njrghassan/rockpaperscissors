@@ -17,31 +17,30 @@ body{
 }
 /* score board */
 .score{
-    display: run-in !important;
+    position: relative;
     font-weight: bold;
     box-shadow:  0 0 15px black;
     border: 6px solid #dee2e6 !important;
 }
 .player{
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.pc{
-    
-    box-shadow:  0 0 10px black;
-}
-
-.pc-player hn{
-    font-size: 1.7em;
+    width: 55px;
+    font-size: 1.2em;
     background-color: #aa2d39 ;
     border: 4px solid #dc3545  !important;
-    
-}
-.pc-player left{
     position: absolute;
-    top: 0mm;
-} 
+    top:   20px;
+    left: -50px;
+}
+.pc{
+    width: 55px;
+    font-size: 1.2em;
+    background-color: #aa2d39 ;
+    border: 4px solid #dc3545  !important;
+    position: absolute;
+    top:   20px;
+    right: -50px;
+}
+
 /*  Rock,Paper,Scissors */
 .rock{
     box-shadow: 0 0 12px black;
@@ -79,10 +78,67 @@ body{
 .scissors:focus{
     background-color: rgb(68, 39, 39);
 }
+/* Player Choice's */
+.playerChoices {
+    position: relative;
+}
+.playerChoices .player2{
+    width: 155px;
+    font-size: 2em;
+    background-color: #aa2d39 ;
+    border: 4px solid #dc3545  !important;
+    position: absolute;
+    top:  80px;
+    right: 250px;
+}
+@media only screen and (max-width: 1370px){
+    .playerChoices .player2 {
+      right: 150px;
+    }
+}
+@media only screen and (max-width: 1158px){
+    .playerChoices .player2 {
+        right: 30px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .playerChoices .player2 {
+        display: none;
+    }
+}
+/* PC Choice's */
+.pcChoices {
+    position: relative;
+}
+.pcChoices .pc2{
+    width: 155px;
+    font-size: 2em;
+    background-color: #aa2d39 ;
+    border: 4px solid #dc3545  !important;
+    position: absolute;
+    top:  40px;
+    right: 250px;
+}
+@media only screen and (max-width: 1370px){
+    .pcChoices .pc2 {
+        right: 150px;
+    }
+  }
+@media only screen and (max-width: 1158px){
+    .pcChoices .pc2 {
+        right: 30px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .pcChoices .pc2 {
+        display: none;
+    }
+}
 span{
     font-size: 3em;
     font-weight: bold;
 }
 footer{
+    margin-top: 210px !important;
     text-shadow: 0 0 7px black;
 }
