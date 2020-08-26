@@ -23,7 +23,7 @@ function win(userChoice, pcChoice){
     userScore++;
     if(userScore > 5 ){
     userScore = 0;
-    confirm("win");
+    alert("win");
     location.reload()
     }
     userScore_span.innerHTML = userScore;
@@ -37,7 +37,7 @@ function loses(userChoice, pcChoice){
     pcScore++;
     if(pcScore > 5){
     pcScore = 0;
-    confirm("lose");
+    alert("lose");
     location.reload()
     }
     pcScore_span.innerHTML = pcScore;
