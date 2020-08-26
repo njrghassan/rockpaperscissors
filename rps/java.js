@@ -11,7 +11,7 @@ const rockPc_div = document.getElementById("rockPc");
 const paperPc_div = document.getElementById("paperPc");
 const scissorsPc_div = document.getElementById("scissorsPc");
 
-alert("still in development but have fun :D ");
+alert("still in development but have fun :D tsu riad hi :D ");
 // The computer's Choice
 function getPcChoice(){
     const choices = ['Rock', 'Paper', 'Scissors']
