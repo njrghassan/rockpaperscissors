@@ -11,7 +11,10 @@ const rockPc_div = document.getElementById("rockPc");
 const paperPc_div = document.getElementById("paperPc");
 const scissorsPc_div = document.getElementById("scissorsPc");
 
-alert("still in development but have fun :D tsu riad hi :D ");
+//console log things
+console.log(document.all)
+
+
 // The computer's Choice
 function getPcChoice(){
     const choices = ['Rock', 'Paper', 'Scissors']
@@ -23,7 +26,8 @@ function win(userChoice, pcChoice){
     userScore++;
     if(userScore > 5 ){
     userScore = 0;
-    alert("win");
+    pcScore = 0;
+    alert("You WIN !");
     location.reload()
     }
     userScore_span.innerHTML = userScore;
@@ -37,7 +41,8 @@ function loses(userChoice, pcChoice){
     pcScore++;
     if(pcScore > 5){
     pcScore = 0;
-    alert("lose");
+    userScore = 0;
+    alert("You lost :(");
     location.reload()
     }
     pcScore_span.innerHTML = pcScore;
@@ -46,12 +51,14 @@ function loses(userChoice, pcChoice){
     const PC = "PC".fontsize(4).fontcolor("#dc3545").sup();
     const lose = "lose!".fontcolor("#d42424") 
     result_div.innerHTML = pcChoice +PC + " Beats " + userChoice+ player + " You " + lose;
+    
 }
 function draw(userChoice, pcChoice){
     const player = "Player".fontsize(4).fontcolor("#dc3545").sup();
     const PC = "PC".fontsize(4).fontcolor("#dc3545").sup();
     const draw = "draw!".fontcolor("#6c757d")
     result_div.innerHTML = pcChoice + PC + " " + userChoice + player + " It's a " + draw;
+    
 }
 
 // wining case's
@@ -75,9 +82,10 @@ function game(userChoice){
             draw(userChoice , pcChoice);            
                 break;
     }
+    console.log("Pc --->"+ " " + pcChoice);  
 }
 
-// Button's are thiiiiccccccccc
+// Button's which is for player's are thiiiiccccccccc
 function main(){
     rock_div.addEventListener('click', function(){
         game("Rock");

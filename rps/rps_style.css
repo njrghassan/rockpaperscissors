@@ -134,6 +134,12 @@ body{
         display: none;
     }
 }
+
+/* Pc clicking change color thing ? */
+#rockPc{
+    background-image: url("photo's/r.png");
+}
+
 span{
     font-size: 3em;
     font-weight: bold;
