@@ -11,9 +11,10 @@ const rockPc_div = document.getElementById("rockPc");
 const paperPc_div = document.getElementById("paperPc");
 const scissorsPc_div = document.getElementById("scissorsPc");
 
+
 //console log things
 console.log(document.all)
-
+alert("The game still in devlopment but have fun :D ")
 
 // The computer's Choice
 function getPcChoice(){
