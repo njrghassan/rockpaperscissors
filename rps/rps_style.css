@@ -53,6 +53,7 @@ body{
 }
 .rock:focus{
     background-color: rgb(68, 39, 39);
+
 }
 .paper{
     box-shadow: 0 0 12px black;
@@ -133,11 +134,6 @@ body{
     .pcChoices .pc2 {
         display: none;
     }
-}
-
-/* Pc clicking change color thing ? */
-#rockPc{
-    background-image: url("photo's/r.png");
 }
 
 span{
