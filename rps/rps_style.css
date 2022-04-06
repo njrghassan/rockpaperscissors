@@ -123,16 +123,19 @@ body{
 @media only screen and (max-width: 1370px){
     .pcChoices .pc2 {
         right: 150px;
+        margin-bottom: 0 !important;
     }
   }
 @media only screen and (max-width: 1158px){
     .pcChoices .pc2 {
         right: 30px;
+        margin-bottom: 0 !important;
     }
 }
 @media only screen and (max-width: 950px){
     .pcChoices .pc2 {
         display: none;
+        margin-bottom: 0 !important;
     }
 }
 
