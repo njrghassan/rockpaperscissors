@@ -25,7 +25,7 @@
             <hn id="pc" class="pc border-danger font-weight-bold text-white">PC</hn>
         </div>
         <div class="result">
-            <h3 class="text-white font-weight-bold pt-3">Choose to get started !</h3>
+            <h3 id="resultAgain" class="text-white font-weight-bold pt-3">Choose to get started !</h3>
         </div>
                 <!--------  ROCK PAPER SCISSORS !  ---------------->
         <hr class="bg-white border border-white"> 
@@ -35,10 +35,21 @@
             <input type="image" width="150px" height="150px" src="photo's/s.png" name="scissors" class="border border-light rounded-circle scissors d-inline m-2" id="Scissors">
         </div>
     </header>
+<div class="text-center">
+    <button id="buttonAppear" type="button" class="btn btn-danger" onclick="apperAgain()">Play again ?</button>
+    <script>
+        var x = document.getElementById("buttonAppear");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }else {
+            x.style.display = "none";
+        }
+    </script>
+</div>
     <br> <br> <br> <br> <br> <br> <br> 
     <footer class="text-center">
         <div>     
-            <h5 class="text-light font-weight-bold">© Copyright 2020 Ghassan @Salah-Soft</h5>
+            <h5 class="text-light font-weight-bold">© Copyright 2020 AppleGamer @Salah-Soft</h5>
         </div>
     </footer>
 <script src="java.js"></script>
