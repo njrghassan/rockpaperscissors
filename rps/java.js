@@ -12,7 +12,7 @@ const scissors_div = document.getElementById("Scissors");
 console.log(document.all)
 
 
-// Button's which is for player's are thiiiiccccccccc
+// Button's which is for player's
 function main(){
     rock_div.addEventListener('click', function(){
         game("Rock");
@@ -36,7 +36,7 @@ function getPcChoice(){
     return choices[randomNumber];
 }
 
-// wining case's
+// wining cases
 function game(userChoice){
     const pcChoice = getPcChoice();
     var name = userChoice + pcChoice
